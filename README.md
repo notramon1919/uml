@@ -13,13 +13,20 @@ class Perro extends Animal{
   }
 }
 
+class Gato extends Animal{
+  String raza;
+  
+  String morder (String cosa) {
+    return null;
+  }
+}
+
 abstract class Animal{
   void alimentar() {
   }
   abstract void sonar();
 }
 ```
-
 
 ```mermaid
 classDiagram
@@ -28,9 +35,16 @@ class Perro {
   +morder(cosa: String): String
 }
 
+class Gato {
+  +String raza
+  +morder(cosa: String): String
+}
+
+
 class Animal{
   void sonar()*
 }
 
 Perro <|-- Animal
+Gato <|-- Animal
 ```
