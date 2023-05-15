@@ -48,3 +48,12 @@ class Animal{
 Perro <|-- Animal
 Gato <|-- Animal
 ```
+```
+sequenceDiagram
+    participant Estudiante
+    participant Profesor
+
+sequenceDiagram
+   Estudiante->>Profesor: Entregar Trabajo
+   Profesor->>Estudiante: Nota
+'''
